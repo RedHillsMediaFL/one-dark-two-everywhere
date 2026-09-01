@@ -34,4 +34,15 @@ jobs:
                       plistlib.load(stream)
           PY
       - name: Secret scan
-        uses: gitleaks/gitleaks-action@v2
+        shell: bash
+        run: |
+          set -euo pipefail
+          work="$RUNNER_TEMP/gitleaks"
+          mkdir -p "$work"
+          cd "$work"
+          archive=gitleaks_8.30.1_linux_x64.tar.gz
+          curl -fsSLO "https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/$archive"
+          curl -fsSLO https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_checksums.txt
+          grep "  $archive$" gitleaks_8.30.1_checksums.txt | sha256sum --check
+          tar -xzf "$archive" gitleaks
+          ./gitleaks dir --no-banner --redact "$GITHUB_WORKSPACE"
