@@ -1,0 +1,18 @@
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: none;
+  -theme-accent-color: #71b9f4;
+}
+window { background-color: #21252b; color: #e6e6e6; }
+content { background-color: #282c34; }
+editor { background-color: #282c34; color: #e6e6e6; selected-text-background-color: #4a505a; }
+terminal { background-color: #21252b; color: #e6e6e6; }
+syntax.comment { color: #969dab; font-style: italic; }
+syntax.string { color: #98c379; }
+syntax.number, syntax.value { color: #e79c7e; }
+syntax.keyword, syntax.storage { color: #c88bda; }
+syntax.function, syntax.identifier.function { color: #71b9f4; }
+syntax.type, syntax.class { color: #eac786; }
+syntax.variable { color: #e27881; }
+syntax.property { color: #62bac6; }
+syntax.invalid { color: #e6e6e6; background-color: #e27881; }

@@ -1,0 +1,17 @@
+{
+  "name": "one-dark-two-everywhere",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic One Dark Two ports for terminals, editors, and agent CLIs.",
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "verify": "node scripts/verify.mjs",
+    "check": "npm run generate && npm run verify",
+    "package:cursor": "cd dist/cursor/one-dark-two-everywhere && npx --yes @vscode/vsce@3.6.2 package --no-dependencies --out ../one-dark-two-everywhere-1.0.0.vsix"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

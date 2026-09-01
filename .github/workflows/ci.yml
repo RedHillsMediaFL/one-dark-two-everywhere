@@ -1,0 +1,37 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Regenerate and verify
+        run: |
+          npm run generate
+          npm run verify
+          git diff --exit-code
+      - name: Package Cursor extension
+        run: npm run package:cursor
+      - name: Validate plists and JSON
+        run: |
+          python3 - <<'PY'
+          import json, pathlib, plistlib
+          for path in pathlib.Path('dist').rglob('*.json'):
+              json.loads(path.read_text())
+          for suffix in ('*.itermcolors', '*.terminal', '*.tmTheme', '*.xccolortheme'):
+              for path in pathlib.Path('dist').rglob(suffix):
+                  with path.open('rb') as stream:
+                      plistlib.load(stream)
+          PY
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2

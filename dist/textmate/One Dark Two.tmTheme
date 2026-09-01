@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key><string>One Dark Two</string>
+  <key>semanticClass</key><string>theme.dark.one-dark-two</string>
+  <key>settings</key><array>
+    <dict><key>settings</key><dict>
+      <key>background</key><string>#282c34</string>
+      <key>caret</key><string>#e6e6e6</string>
+      <key>foreground</key><string>#e6e6e6</string>
+      <key>invisibles</key><string>#6c7280</string>
+      <key>lineHighlight</key><string>#393e47</string>
+      <key>selection</key><string>#4a505a</string>
+    </dict></dict>
+    <dict><key>name</key><string>Comment</string><key>scope</key><string>comment, punctuation.definition.comment</string><key>settings</key><dict><key>foreground</key><string>#969dab</string><key>fontStyle</key><string>italic</string></dict></dict>
+<dict><key>name</key><string>Strings</string><key>scope</key><string>string, constant.other.symbol</string><key>settings</key><dict><key>foreground</key><string>#98c379</string></dict></dict>
+<dict><key>name</key><string>Numbers and constants</string><key>scope</key><string>constant.numeric, constant.language, constant.character</string><key>settings</key><dict><key>foreground</key><string>#e79c7e</string></dict></dict>
+<dict><key>name</key><string>Keywords</string><key>scope</key><string>keyword, storage.type, storage.modifier</string><key>settings</key><dict><key>foreground</key><string>#c88bda</string></dict></dict>
+<dict><key>name</key><string>Functions</string><key>scope</key><string>entity.name.function, support.function</string><key>settings</key><dict><key>foreground</key><string>#71b9f4</string></dict></dict>
+<dict><key>name</key><string>Types</string><key>scope</key><string>entity.name.type, entity.name.class, support.type</string><key>settings</key><dict><key>foreground</key><string>#eac786</string></dict></dict>
+<dict><key>name</key><string>Variables</string><key>scope</key><string>variable, variable.other.readwrite</string><key>settings</key><dict><key>foreground</key><string>#e27881</string></dict></dict>
+<dict><key>name</key><string>Parameters</string><key>scope</key><string>variable.parameter</string><key>settings</key><dict><key>foreground</key><string>#e79c7e</string></dict></dict>
+<dict><key>name</key><string>Properties</string><key>scope</key><string>variable.other.property, support.variable.property</string><key>settings</key><dict><key>foreground</key><string>#62bac6</string></dict></dict>
+<dict><key>name</key><string>Tags</string><key>scope</key><string>entity.name.tag</string><key>settings</key><dict><key>foreground</key><string>#e27881</string></dict></dict>
+<dict><key>name</key><string>Attributes</string><key>scope</key><string>entity.other.attribute-name</string><key>settings</key><dict><key>foreground</key><string>#eac786</string></dict></dict>
+<dict><key>name</key><string>Invalid</string><key>scope</key><string>invalid, invalid.illegal</string><key>settings</key><dict><key>foreground</key><string>#e6e6e6</string><key>background</key><string>#e27881</string></dict></dict>
+<dict><key>name</key><string>Diff inserted</string><key>scope</key><string>markup.inserted, meta.diff.header.to-file</string><key>settings</key><dict><key>foreground</key><string>#98c379</string></dict></dict>
+<dict><key>name</key><string>Diff deleted</string><key>scope</key><string>markup.deleted, meta.diff.header.from-file</string><key>settings</key><dict><key>foreground</key><string>#e27881</string></dict></dict>
+<dict><key>name</key><string>Diff changed</string><key>scope</key><string>markup.changed</string><key>settings</key><dict><key>foreground</key><string>#eac786</string></dict></dict>
+  </array>
+  <key>uuid</key><string>65C9434D-2D95-4EF4-A8C4-4AE6CE847D20</string>
+</dict>
+</plist>

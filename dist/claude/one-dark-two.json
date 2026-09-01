@@ -1,0 +1,21 @@
+{
+  "name": "One Dark Two",
+  "base": "dark",
+  "overrides": {
+    "claude": "#c88bda",
+    "text": "#e6e6e6",
+    "inverseText": "#1d1f23",
+    "dimText": "#abb2bf",
+    "error": "#e27881",
+    "warning": "#eac786",
+    "success": "#98c379",
+    "info": "#71b9f4",
+    "link": "#62bac6",
+    "suggestion": "#969dab",
+    "planMode": "#62bac6",
+    "promptBorder": "#71b9f4",
+    "diffAdded": "#98c379",
+    "diffRemoved": "#e27881",
+    "userMessageBackground": "#393e47"
+  }
+}

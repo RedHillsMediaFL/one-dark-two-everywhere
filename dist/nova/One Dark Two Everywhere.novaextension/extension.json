@@ -1,0 +1,13 @@
+{
+  "identifier": "fl.redhillsmedia.one-dark-two-everywhere",
+  "name": "One Dark Two Everywhere",
+  "organization": "Red Hills Media",
+  "description": "Exact One Dark Two theme.",
+  "version": "1.0.0",
+  "categories": [
+    "themes"
+  ],
+  "minimum_nova_version": "10.0",
+  "homepage": "https://github.com/RedHillsMediaFL/one-dark-two-everywhere",
+  "bugs": "https://github.com/RedHillsMediaFL/one-dark-two-everywhere/issues"
+}

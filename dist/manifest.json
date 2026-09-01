@@ -1,0 +1,153 @@
+{
+  "name": "One Dark Two",
+  "version": "1.0.0",
+  "generatedBy": "scripts/generate.mjs",
+  "paletteSource": "palette/one-dark-two.json",
+  "files": [
+    {
+      "path": "alacritty/one-dark-two.toml",
+      "bytes": 496,
+      "sha256": "dbef66877418855de28c4e75197b5c0da3cb487e9fd7371fed72c812c67c88bf"
+    },
+    {
+      "path": "btop/one-dark-two.theme",
+      "bytes": 1067,
+      "sha256": "14ccc2d5b4051986be31d3fbf2cf3f9baf8a51c44f590ee61e19564060a5882d"
+    },
+    {
+      "path": "claude/one-dark-two.json",
+      "bytes": 479,
+      "sha256": "38bb0e210bd0454815ce14f2fd7ce898c64c42057eb860a878a3b4d207b3a5c2"
+    },
+    {
+      "path": "cursor/one-dark-two-everywhere/LICENSE",
+      "bytes": 1108,
+      "sha256": "1fc4d30c131503d05964ca717c071f2148f384c0ab296a92f4a468de257787e1"
+    },
+    {
+      "path": "cursor/one-dark-two-everywhere/README.md",
+      "bytes": 76,
+      "sha256": "565375de8486c9d9779a3d1dea0293595440b3fc1a4f1e4ff501f62b5c97467d"
+    },
+    {
+      "path": "cursor/one-dark-two-everywhere/extension.png",
+      "bytes": 35049,
+      "sha256": "90d2c6f4468631016f30a93a51186119c99996f8b5145f2d97be79bfbe3dfec8"
+    },
+    {
+      "path": "cursor/one-dark-two-everywhere/package.json",
+      "bytes": 725,
+      "sha256": "146175c94cf771d8c21a67e78bad035110b68d9db041ddfe24af8c018dde4440"
+    },
+    {
+      "path": "cursor/one-dark-two-everywhere/themes/one-dark-two-color-theme.json",
+      "bytes": 5380,
+      "sha256": "2736385ef1e837707e916b5523d6795e843c4c32837b68cabba7159413e3a006"
+    },
+    {
+      "path": "fzf/one-dark-two.sh",
+      "bytes": 285,
+      "sha256": "4b20bac9be2d676d438467b0445863e47d803a1928ef8f638cd6b9a00a18439b"
+    },
+    {
+      "path": "gemini/one-dark-two.json",
+      "bytes": 593,
+      "sha256": "d4663e4b04be94b83d64fdd93697e68cc2fe8aba37834768749708ba83b1d61d"
+    },
+    {
+      "path": "ghostty/one-dark-two",
+      "bytes": 453,
+      "sha256": "8e39c8762fd8e45d409cacc309c314d54b8c423a21b7cfe82f8331166f860a3b"
+    },
+    {
+      "path": "kitty/one-dark-two.conf",
+      "bytes": 357,
+      "sha256": "e88af11846141bc2add118ea4a8e4ac110a08a3d27a071019b551936b6b402c5"
+    },
+    {
+      "path": "lazygit/one-dark-two.yml",
+      "bytes": 500,
+      "sha256": "07ae46d80d2474634dcb88e129f12ba879f7eb2d616708cc4470cc2f20272de6"
+    },
+    {
+      "path": "moshi/one-dark-two.json",
+      "bytes": 626,
+      "sha256": "a71848624a732ca15e1145cbf6a4a38c1b50f8a2c7e6836cc41cc3ce15cf0cad"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/CHANGELOG.md",
+      "bytes": 61,
+      "sha256": "07af7f2a8c49f704caa93a672c825c173bf5580e8c76f2335af3859d55b6dacf"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/LICENSE",
+      "bytes": 1108,
+      "sha256": "1fc4d30c131503d05964ca717c071f2148f384c0ab296a92f4a468de257787e1"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/README.md",
+      "bytes": 51,
+      "sha256": "c2c560b96180583b4ac92ad3ca586ade9eb3511a173a2883ee5c8fd18e76d0ab"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/Themes/One Dark Two.css",
+      "bytes": 774,
+      "sha256": "3dfdb9f4d65ea25fc314ae9b7d4fb94f4725dde1c381c0b263a1c994ae501e8a"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/extension.json",
+      "bytes": 430,
+      "sha256": "e631cd3a0effd9a5e07de75cfd606da897dd587140bb9bc9181636be91d7938d"
+    },
+    {
+      "path": "nova/One Dark Two Everywhere.novaextension/extension.png",
+      "bytes": 35049,
+      "sha256": "90d2c6f4468631016f30a93a51186119c99996f8b5145f2d97be79bfbe3dfec8"
+    },
+    {
+      "path": "shell/truecolor.sh",
+      "bytes": 258,
+      "sha256": "f311a49363c3806217c2e7eeb777f6f6d8e06cf7650b3854d35efe3756559542"
+    },
+    {
+      "path": "terminal/One Dark Two.itermcolors",
+      "bytes": 7184,
+      "sha256": "6c39a3d74a787eec0a39908f8fcbe52d42d8174eca8908e9892c0dfbaba34913"
+    },
+    {
+      "path": "terminal/One Dark Two.terminal",
+      "bytes": 8827,
+      "sha256": "bad40772b87f7b20d5b127b2ff8a468a7e2bfccf87dc0a7e2ba1ec36bc47f1b1"
+    },
+    {
+      "path": "textmate/One Dark Two.tmTheme",
+      "bytes": 3868,
+      "sha256": "ef2e138bb535babe6170ddd3b9a685c9a3c1c1b52df817cb16225c3870dd2fda"
+    },
+    {
+      "path": "tmux/one-dark-two.conf",
+      "bytes": 433,
+      "sha256": "1141d4cbcd13c2368450f26c7cff3677d2a4da54385775c48ca87229626482f4"
+    },
+    {
+      "path": "vim/colors/one-dark-two.vim",
+      "bytes": 818,
+      "sha256": "3ea229fb05060ff7053f371b83707f7fe9759bcaf204702e6de6edbd521ed289"
+    },
+    {
+      "path": "wezterm/one-dark-two.toml",
+      "bytes": 344,
+      "sha256": "c304431df45fc0427a2bb4960a6dc146a51b7933eecc73e5d1864192785c265a"
+    },
+    {
+      "path": "windows-terminal/one-dark-two.json",
+      "bytes": 543,
+      "sha256": "658962361563e32ebd886db096e60eeb856e130f742fdd0f1eb582e3e7d72ddd"
+    },
+    {
+      "path": "xcode/One Dark Two.xccolortheme",
+      "bytes": 4609,
+      "sha256": "5e90cb5bd6ea56de141e51c23ed89ceb141e94e8ce5b3369264d1891abc05d65"
+    }
+  ]
+}

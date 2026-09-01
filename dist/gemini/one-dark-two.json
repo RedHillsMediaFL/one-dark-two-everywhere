@@ -1,0 +1,35 @@
+{
+  "name": "One Dark Two",
+  "type": "custom",
+  "background": {
+    "primary": "#282c34",
+    "diff": {
+      "added": "#393e47",
+      "removed": "#1d1f23"
+    }
+  },
+  "text": {
+    "primary": "#e6e6e6",
+    "secondary": "#abb2bf",
+    "link": "#62bac6",
+    "accent": "#c88bda"
+  },
+  "border": {
+    "default": "#5b626d",
+    "focused": "#71b9f4"
+  },
+  "status": {
+    "success": "#98c379",
+    "warning": "#eac786",
+    "error": "#e27881"
+  },
+  "ui": {
+    "comment": "#969dab",
+    "symbol": "#62bac6",
+    "gradient": [
+      "#c88bda",
+      "#71b9f4",
+      "#62bac6"
+    ]
+  }
+}
