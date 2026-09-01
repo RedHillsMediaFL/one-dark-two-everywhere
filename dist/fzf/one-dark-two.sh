@@ -1,1 +1,2 @@
-export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS:+$FZF_DEFAULT_OPTS }--color=bg:#282c34,bg+:{s.surface0},fg:#e6e6e6,fg+:{s.text},hl:#c88bda,hl+:{b.magenta},info:#62bac6,marker:#98c379,prompt:#71b9f4,spinner:#eac786,pointer:#e27881,header:#abb2bf,border:#5b626d,label:#c9ccd3,query:#e6e6e6"
+# shellcheck shell=sh
+export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS:+$FZF_DEFAULT_OPTS }--color=bg:#282c34,bg+:#393e47,fg:#e6e6e6,fg+:#e6e6e6,hl:#c88bda,hl+:#d3a2e2,info:#62bac6,marker:#98c379,prompt:#71b9f4,spinner:#eac786,pointer:#e27881,header:#abb2bf,border:#5b626d,label:#c9ccd3,query:#e6e6e6"

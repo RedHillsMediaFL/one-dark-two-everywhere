@@ -1,6 +1,6 @@
 {
   "name": "One Dark Two",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "generatedBy": "scripts/generate.mjs",
   "paletteSource": "palette/one-dark-two.json",
   "files": [
@@ -37,7 +37,7 @@
     {
       "path": "cursor/one-dark-two-everywhere/package.json",
       "bytes": 725,
-      "sha256": "146175c94cf771d8c21a67e78bad035110b68d9db041ddfe24af8c018dde4440"
+      "sha256": "012aeb26e9f3b510f36c210d80f6231bd585fa7b9aca0c04ed5d4952638f3e24"
     },
     {
       "path": "cursor/one-dark-two-everywhere/themes/one-dark-two-color-theme.json",
@@ -46,8 +46,8 @@
     },
     {
       "path": "fzf/one-dark-two.sh",
-      "bytes": 285,
-      "sha256": "4b20bac9be2d676d438467b0445863e47d803a1928ef8f638cd6b9a00a18439b"
+      "bytes": 297,
+      "sha256": "8bb88b41f84cecce2f3a91f8cd105146ff1b7cadfdb35a6afae0b7d785ebe75f"
     },
     {
       "path": "gemini/one-dark-two.json",
@@ -76,8 +76,8 @@
     },
     {
       "path": "nova/One Dark Two Everywhere.novaextension/CHANGELOG.md",
-      "bytes": 61,
-      "sha256": "07af7f2a8c49f704caa93a672c825c173bf5580e8c76f2335af3859d55b6dacf"
+      "bytes": 199,
+      "sha256": "e31c7ea6a332c8bffb6a47366ff7a5be4a1a2c47e8baefc165d8f2e3010c70ce"
     },
     {
       "path": "nova/One Dark Two Everywhere.novaextension/LICENSE",
@@ -97,7 +97,7 @@
     {
       "path": "nova/One Dark Two Everywhere.novaextension/extension.json",
       "bytes": 430,
-      "sha256": "e631cd3a0effd9a5e07de75cfd606da897dd587140bb9bc9181636be91d7938d"
+      "sha256": "5d69317da8337552027878133b9a7a0064fa014a8c8ceb79ee79e2441d5b0030"
     },
     {
       "path": "nova/One Dark Two Everywhere.novaextension/extension.png",
@@ -106,8 +106,8 @@
     },
     {
       "path": "shell/truecolor.sh",
-      "bytes": 258,
-      "sha256": "f311a49363c3806217c2e7eeb777f6f6d8e06cf7650b3854d35efe3756559542"
+      "bytes": 280,
+      "sha256": "3df5113e135dc7be96c153e6a24ddd5cd3fc971aaabc2166f1daa21c687aa57b"
     },
     {
       "path": "terminal/One Dark Two.itermcolors",

@@ -2,7 +2,7 @@
   "name": "one-dark-two-everywhere",
   "displayName": "One Dark Two Everywhere",
   "description": "The exact One Dark Two palette for Cursor and VS Code.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "redhillsmediafl",
   "license": "MIT",
   "icon": "extension.png",

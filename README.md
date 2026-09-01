@@ -38,7 +38,7 @@ open "dist/terminal/One Dark Two.itermcolors"
 open "dist/terminal/One Dark Two.terminal"
 
 # Cursor
-cursor --install-extension dist/cursor/one-dark-two-everywhere-1.0.0.vsix
+cursor --install-extension dist/cursor/one-dark-two-everywhere-1.0.1.vsix
 
 # Codex / bat
 mkdir -p ~/.codex/themes ~/.config/bat/themes

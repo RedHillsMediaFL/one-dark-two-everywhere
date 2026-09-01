@@ -57,5 +57,8 @@ const corpus = trackedText.join("\n");
 if (/ak_[A-Za-z0-9_-]{20,}|gh[opsu]_[A-Za-z0-9]{20,}|BEGIN [A-Z ]+PRIVATE KEY/.test(corpus)) {
   throw new Error("credential-like content found in generated assets");
 }
+if (/\{[sb]\.[a-zA-Z0-9_]+\}/.test(corpus)) {
+  throw new Error("unexpanded palette token found in generated assets");
+}
 
 console.log(`verified ${manifest.files.length} assets; contrast ${contrast(palette.terminal.foreground, palette.terminal.background).toFixed(2)}:1`);

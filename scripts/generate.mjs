@@ -6,6 +6,8 @@ import { fileURLToPath } from "node:url";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = join(root, "dist");
 const palette = JSON.parse(await readFile(join(root, "palette/one-dark-two.json"), "utf8"));
+const packageMetadata = JSON.parse(await readFile(join(root, "package.json"), "utf8"));
+const version = packageMetadata.version;
 const s = palette.standard;
 const b = palette.bright;
 const t = palette.terminal;
@@ -171,7 +173,7 @@ const cursorRoot = "cursor/one-dark-two-everywhere";
 await emit(`${cursorRoot}/package.json`, json({
   name: "one-dark-two-everywhere", displayName: "One Dark Two Everywhere",
   description: "The exact One Dark Two palette for Cursor and VS Code.",
-  version: "1.0.0", publisher: "redhillsmediafl", license: "MIT",
+  version, publisher: "redhillsmediafl", license: "MIT",
   icon: "extension.png", files: ["themes/**", "extension.png", "README.md", "LICENSE"],
   repository: { type: "git", url: "https://github.com/RedHillsMediaFL/one-dark-two-everywhere" },
   engines: { vscode: "^1.85.0" }, categories: ["Themes"],
@@ -206,13 +208,23 @@ const novaRoot = "nova/One Dark Two Everywhere.novaextension";
 await emit(`${novaRoot}/extension.json`, json({
   identifier: "fl.redhillsmedia.one-dark-two-everywhere", name: "One Dark Two Everywhere",
   organization: "Red Hills Media", description: "Exact One Dark Two theme.",
-  version: "1.0.0", categories: ["themes"], minimum_nova_version: "10.0",
+  version, categories: ["themes"], minimum_nova_version: "10.0",
   homepage: "https://github.com/RedHillsMediaFL/one-dark-two-everywhere",
   bugs: "https://github.com/RedHillsMediaFL/one-dark-two-everywhere/issues",
 }));
 await emit(`${novaRoot}/Themes/One Dark Two.css`, novaCss);
 await emit(`${novaRoot}/README.md`, "# One Dark Two Everywhere\n\nNative Nova theme port.");
-await emit(`${novaRoot}/CHANGELOG.md`, "# Changelog\n\n## 1.0.0\n\n- Initial One Dark Two theme release.\n");
+await emit(`${novaRoot}/CHANGELOG.md`, `# Changelog
+
+## ${version}
+
+- Correct the generated fzf selected and highlighted color values.
+- Mark portable shell fragments for POSIX-shell validation.
+
+## 1.0.0
+
+- Initial One Dark Two theme release.
+`);
 await emit(`${novaRoot}/LICENSE`, await readFile(join(root, "LICENSE"), "utf8"));
 await cp(join(root, "vendor/one-dark-two-logo.png"), join(dist, `${novaRoot}/extension.png`));
 generated.push(`${novaRoot}/extension.png`);
@@ -357,10 +369,12 @@ await emit("lazygit/one-dark-two.yml", `gui:
     defaultFgColor: ['${s.text}']
 `);
 
-await emit("fzf/one-dark-two.sh", `export FZF_DEFAULT_OPTS="\${FZF_DEFAULT_OPTS:+$FZF_DEFAULT_OPTS }--color=bg:${s.base},bg+:{s.surface0},fg:${s.text},fg+:{s.text},hl:${s.magenta},hl+:{b.magenta},info:${s.cyan},marker:${s.green},prompt:${s.blue},spinner:${s.yellow},pointer:${s.red},header:${s.subtext0},border:${s.surface2},label:${s.subtext1},query:${s.text}"
+await emit("fzf/one-dark-two.sh", `# shellcheck shell=sh
+export FZF_DEFAULT_OPTS="\${FZF_DEFAULT_OPTS:+$FZF_DEFAULT_OPTS }--color=bg:${s.base},bg+:${s.surface0},fg:${s.text},fg+:${s.text},hl:${s.magenta},hl+:${b.magenta},info:${s.cyan},marker:${s.green},prompt:${s.blue},spinner:${s.yellow},pointer:${s.red},header:${s.subtext0},border:${s.surface2},label:${s.subtext1},query:${s.text}"
 `);
 
-await emit("shell/truecolor.sh", `# Source from zshenv/bash startup; do not use *-direct TERM identities.
+await emit("shell/truecolor.sh", `# shellcheck shell=sh
+# Source from zshenv/bash startup; do not use *-direct TERM identities.
 case \${TERM-} in
   ''|dumb) ;;
   *)
@@ -431,7 +445,7 @@ for (const relative of generated.sort()) {
   manifestFiles.push({ path: relative, bytes: data.byteLength, sha256: createHash("sha256").update(data).digest("hex") });
 }
 await emit("manifest.json", json({
-  name: palette.name, version: "1.0.0", generatedBy: "scripts/generate.mjs",
+  name: palette.name, version, generatedBy: "scripts/generate.mjs",
   paletteSource: "palette/one-dark-two.json", files: manifestFiles,
 }));
 

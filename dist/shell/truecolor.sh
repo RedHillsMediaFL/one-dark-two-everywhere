@@ -1,3 +1,4 @@
+# shellcheck shell=sh
 # Source from zshenv/bash startup; do not use *-direct TERM identities.
 case ${TERM-} in
   ''|dumb) ;;
